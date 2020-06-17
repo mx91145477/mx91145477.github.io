@@ -1,31 +1,127 @@
- <!DOCTYPE html>
-<html>
-<script language="JavaScript">
-<!--
-(window.alert("往下滑可以進到留言區喔！"))
---></script>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    version="XHTML+RDFa 1.0"
+    xmlns:og="http://ogp.me/ns#"
+    xml:lang="en">
+<!-- 
+    Smart developers always View Source. 
+    
+    This application was built using Adobe Flex, an open source framework
+    for building rich Internet applications that get delivered via the
+    Flash Player or to desktops via Adobe AIR. 
+    
+    Learn more about Flex at http://flex.org 
+    // -->
 <head>
-<title>test</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Public Art</title>
+<meta name="Keywords" content="" />
+<meta name="Description" content="Public Art" />
+<meta name="Generator" content="Flip PDF Professional 2.4.9.31 at http://www.flipbuilder.com" />
+<meta name="medium" content="video"/> 
+
+<meta property="og:image" content="files/shot.png"/>
+<meta property="og:title" content="Public Art"/> 
+<meta property="og:description" content="Public Art" />
+<meta property="og:video" content="book.swf"/> 
+<meta property="og:video:height" content="300"/> 
+<meta property="og:video:width" content="420"/> 
+<meta property="og:video:type" content="application/x-shockwave-flash"/> 
+
+<meta name="video_height" content="300"/> 
+<meta name="video_width" content="420"/> 
+<meta name="video_type" content="application/x-shockwave-flash"/> 
+<meta name="og:image" content="files/shot.png"/>
+
+<link rel="image_src" href="files/shot.png"/>
+ <link rel="apple-touch-icon" href="files/thumb/1.jpg" />
+<!-- Include CSS to eliminate any default margins/padding and set the height of the html element and 
+       the body element to 100%, because Firefox, or any Gecko based browser, interprets percentage as 
+    the percentage of the height of its parent container, which has to be set explicitly.  Initially, 
+    don't display flashContent div so it won't show if JavaScript disabled.
+  -->
+
+<style type="text/css" media="screen">
+/*<![CDATA[*/
+html,
+body
+{
+ height:100%;
+ margin: 0px;
+ overflow:hidden;
+}
+
+body
+{
+ margin:0;
+ padding:0;
+ overflow:auto;
+ text-align:center;
+ background-color: #ffffff;
+}
+
+#flashContent
+{
+ display:none;
+}
+/*]]>*/
+</style>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/fbscript.js"></script>
+
 </head>
 <body>
-<iframe src="book.html" frameborder="0" scrolling="no" style="width:100%;height:100%;margin:0 auto"></iframe>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div id="busuanzi_value_site_uv">瀏覽人次：<div id="busuanzi_value_site_uv"></div></div>
-<SCRIPT language="JavaScript">
-<!--
-    var a = 100;
-	var b = document.getElementById('busunazi_value_site_uv').value;
-	var c = a + b;
-    document.write("瀏覽人次："+ c);
-//-->
-</SCRIPT>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v6.0"></script>
-<div class="fb-comments" data-href="https://mx91145477.nctu.me/" data-width="device-width" data-numposts="5" style="align:center;text-align:center;margin:auto"></div>
+<!-- SWFObject's dynamic embed method replaces this alternative HTML content with Flash content when enough 
+    JavaScript and Flash plug-in support is available. The div is initially hidden so that it doesn't show
+    when JavaScript is disabled.
+  -->
+  
+<div id="flashContent">
+<p>To view this page ensure that Adobe Flash Player version 10.0.0
+or greater is installed.</p>
+ Besides, it's possible to <a href='./files/basic-html/index.html'>view a simplified version of the flippdf book on any device </a>,
+or you can view flippdf <a href='mobile/index.html'>mobile version </a>
+</div>
+
+ <script>
+ 	function showUserAgent(){
+		var str = navigator.userAgent;
+		var p = document.createElement("p");
+		p.innerHTML = str;
+		p.className = "gray";
+		document.getElementById("flashContent").appendChild(p);
+	}
+	
+	showUserAgent();
+</script>
+
+<noscript><div><object classid=
+"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height=
+"100%" id="FlipBookBuilder"><param name="movie" value="book.swf" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" />
+<param name="allowScriptAccess" value="always" />
+<param name="allowFullScreen" value="true" />
+<param name="allowFullScreenInteractive" value="true" />
+<!--[if !IE]>-->
+<object type="application/x-shockwave-flash" data="book.swf" width=
+"100%" height="100%"><param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" />
+<param name="allowScriptAccess" value="always" />
+<param name="allowFullScreen" value="true" />
+<param name="allowFullScreenInteractive" value="true" />
+<param name="wmode" value="transparent" />
+<!--<![endif]--><!--[if gte IE 6]>-->
+<p>Either scripts and active content are not permitted to run or
+Adobe Flash Player version 10.0.0 or greater is not installed.</p>
+<!--<![endif]--> 
+<a href="http://www.adobe.com/go/getflashplayer">Get Adobe Flash Player</a> <br/> <br/>
+Besides, it's possible to <a href='./files/basic-html/index.html'>view a simplified version of the flippdf book on any device </a>,
+or you can view flippdf <a href='mobile/index.html'>mobile version </a>
+<!--[if !IE]>--> <!--<![endif]--> </div></noscript>
+<script type="text/javascript" src="js/ActionHtmlWindow.js"></script>
+<script type="text/javascript" src="js/fbendscript.js"></script>
+
+<noscript><div><hr/><ul><li><a href="files/basic-html/index.html">Pages</a></li></ul><hr style="width:80%"/></div></noscript>
 </body>
 </html>
